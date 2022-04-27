@@ -1,0 +1,115 @@
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Oswald:wght@300&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  /* font-family: "Bebas Neue", cursive; */
+  font-family: "Oswald", sans-serif;
+  font-size: 100%;
+}
+
+body,
+#root {
+  background: url(https://library.sportingnews.com/2022-04/GettyImages-1390583461.jpg)
+    no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+/* ------------------ container ------------------ */
+.container {
+  background-color: white;
+  padding: 0px 30px;
+  width: 1000px;
+  margin: 0 auto;
+  box-shadow: 2px 0px 5px rgb(78, 78, 78), -2px 0px 5px rgb(78, 78, 78);
+}
+
+/* ensures chain to be height: 100% */
+html,
+body,
+#root,
+.container {
+  height: 100%;
+}
+
+label {
+  margin-left: 40px;
+  font-size: 110%;
+}
+
+/* ------------------ App.js ------------------ */
+.container > img {
+  padding: 20px 0px;
+}
+
+.UFCLogo {
+  margin: 0px auto 0px;
+  display: block;
+  width: 22%;
+}
+
+iframe {
+  border-radius: 12px;
+  width: 380px;
+  height: 80px;
+  box-shadow: 3px 2px 4px rgb(105, 105, 105);
+}
+
+h1 {
+  margin: 30px 0px;
+  text-align: center;
+  font-size: 220%;
+}
+
+/* ------------------ Fighter Cards ------------------ */
+.fighterCard {
+  margin: 50px 0px 30px 0;
+  display: flex;
+  /* padding: 0px 20px; */
+}
+
+.fighterCardLeft {
+  /* padding: 0px 20px; */
+}
+
+.fighterCardHalf {
+  width: 50%;
+  padding: 0px 40px;
+  /* overflow: hidden; */
+}
+
+.fighterImage {
+  object-fit: cover;
+  height: 500px;
+  width: 100%;
+  /* border: 5px solid; */
+  border-color: black;
+  box-shadow: 3px 2px 4px rgb(105, 105, 105);
+}
+
+.fighterCardRight > .embedContainer > p {
+  /* text-align: center; */
+  /* font-size: 100%; */
+}
+
+.embedContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  height: 500px;
+}
+
+p {
+  /* text-align: center; */
+  font-size: 115%;
+}
+
+/* ------------------ Specific Fighter Card Images ------------------ */
+
+.aljamainSterlingImage {
+  /* margin: 0px 0px 0px 0px; */
+}

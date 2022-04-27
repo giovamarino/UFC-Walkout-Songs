@@ -1,0 +1,22 @@
+{
+  "Fighters": [
+    {
+      "fighter": "Aljamain Sterling",
+      "weightClass": "Bantamweight",
+      "song3": "Joyner Lucas - I Love",
+      "song2": "Damian Marley - Living it Up"
+    },
+    {
+      "fighter": "Alexander Volkanovski",
+      "weightClass": "Featherweight",
+      "song3": "Men at Work - Down Under"
+    },
+    {
+      "fighter": "Israel Adesanya",
+      "weightClass": "Middleweight",
+      "song3": "Linkin Park - Somewhere I Belong",
+      "song2": "DJ Khaled featuring Buju Baton, Capleton & Bounty Killer - Where You Come From",
+      "song1": "Kool & The Gang - I Love"
+    }
+  ]
+}
