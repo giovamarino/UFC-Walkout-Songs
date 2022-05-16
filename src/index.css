@@ -10,8 +10,7 @@
 
 body,
 #root {
-  background: url(https://library.sportingnews.com/2022-04/GettyImages-1390583461.jpg)
-    no-repeat center center fixed;
+  background: url(/public/background.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -49,6 +48,7 @@ label {
   margin: 0px auto 0px;
   display: block;
   width: 22%;
+  padding: 20px 0 0 0;
 }
 
 iframe {
