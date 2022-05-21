@@ -81,6 +81,7 @@ h1 {
   width: 100%;
   border-color: black;
   box-shadow: 3px 2px 4px rgb(105, 105, 105);
+  border-radius: 12px;
 }
 
 .embedContainer {

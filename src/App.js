@@ -19,6 +19,23 @@ const App = () => {
   let [fighter, setFighter] = useState(`Deiveson Figueiredo`);
   const navigate = useNavigate();
 
+  // for the setFighter hook, so the title displays nicely. See onChange function for more
+  const fighterNames = {
+    DeivesonFigueiredo: `Deiveson Figueiredo`,
+    AljamainSterling: `Aljamain Sterling`,
+    AlexanderVolkanovski: `Alexander Volkanovski`,
+    CharlesOliveira: `Charles Oliveira`,
+    KamaruUsman: `Kamaru Usman`,
+    IsraelAdesanya: `Israel Adesanya`,
+    GloverTeixeira: `Glover Teixeira`,
+    FrancisNgannou: `Francis Ngannou`,
+    RoseNamajunas: `Rose Namajunas`,
+    ValentinaShevchenko: `Valentina Shevchenko`,
+    JuliannaPena: `Julianna Peña`,
+    AmandaNunes: `Amanda Nunes`,
+  };
+  const fighterNamesArray = Object.entries(fighterNames);
+
   return (
     <div className="container">
       <header>
@@ -54,11 +71,13 @@ const App = () => {
           <select
             id="fighterLabel"
             onChange={(e) => {
-              setFighter(e.target.value);
+              for (let i = 0; i < fighterNamesArray.length; i++) {
+                const element = fighterNamesArray[i];
+                if (element[0] === e.target.value) {
+                  setFighter(element[1]);
+                }
+              }
               navigate(`/${e.target.value}`);
-              console.log(e);
-              console.log(e.target.value);
-              console.log(e.nativeEvent.target.innerText[e.target.value]);
             }}
           >
             <option value="DeivesonFigueiredo">Deiveson Figueiredo</option>
